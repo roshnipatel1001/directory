@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ForgetPassActivity">
+
+
+    <ImageView
+        android:layout_width="@dimen/dp_34"
+        android:layout_height="@dimen/dp_34"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginStart="@dimen/sp_14"
+        android:src="@drawable/ic_back"
+        android:tint="@color/border70"
+        android:padding="@dimen/dp_5"
+        android:id="@+id/btBack"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_44"
+            android:text="Forgot Password"
+            android:textColor="@color/textBlack"
+            android:textSize="30sp"
+            android:fontFamily="@font/rubik_bold"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:text="Enter your email and we will send you instructions\non how to reset your password"
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/sp_14"
+            android:fontFamily="@font/rubik_regular"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiEmail"
+            app:errorIconDrawable="@null"
+            android:layout_marginTop="@dimen/dp_40"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/sp_16"
+                android:id="@+id/etEmail"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/rubik"
+                android:textColor="@color/textBlack"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginTop="@dimen/dp_30"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:text="Submit"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:textColor="@color/textWhiteFF"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</layout>

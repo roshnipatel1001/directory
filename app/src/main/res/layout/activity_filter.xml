@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activities.FilterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="@dimen/dp_56"
+        android:layout_margin="@dimen/dp_16">
+
+        <ImageView
+            android:id="@+id/btCancel"
+            android:layout_width="@dimen/dp_34"
+            android:layout_height="@dimen/dp_34"
+            android:padding="@dimen/dp_5"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_cancel"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_toEndOf="@+id/btCancel"
+          android:layout_marginStart="@dimen/dp_16"
+          android:layout_centerInParent="true"
+          android:gravity="center"
+          android:text="Filters"
+          android:textSize="@dimen/sp_20"
+          android:fontFamily="@font/rubik_medium"
+          android:textColor="@color/black00"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Clear"
+            android:textSize="@dimen/sp_14"
+            android:fontFamily="@font/rubik_regular"
+            android:textColor="@color/textGrey70"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_alignParentBottom="true"
+            android:background="@color/viewE0"
+            android:layout_marginTop="@dimen/dp_12"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCategory"
+        android:gravity="start"
+        android:text="Category"
+        android:layout_below="@id/toolbar"
+        android:textSize="@dimen/sp_16"
+        android:fontFamily="@font/rubik_regular"
+        android:layout_marginStart="@dimen/dp_16"
+        android:textColor="@color/textGrey70"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Expandable"
+        android:layout_below="@id/tvCategory"
+        android:layout_above="@id/llbt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:id="@+id/llbt"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEx"
+            android:gravity="start"
+            android:layout_below="@id/Expandable"
+            android:text="Sort by"
+            android:textSize="@dimen/sp_16"
+            android:fontFamily="@font/rubik_regular"
+            android:layout_marginTop="@dimen/dp_27"
+            android:layout_marginStart="@dimen/dp_16"
+            android:textColor="@color/textGrey70"/>
+
+        <ToggleButton
+            android:id="@+id/btNear"
+           android:background="@drawable/toogle"
+            android:layout_width="@dimen/dp_112"
+            android:layout_height="@dimen/dp_36"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_19"
+            android:layout_marginEnd="@dimen/dp_60"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:fontFamily="@font/rubik_regular"
+            android:layout_below="@+id/tvEx"
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:textOn="Near me"
+            android:textOff="Near me"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_14" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btApply"
+            android:layout_width="match_parent"
+            android:layout_below="@id/btNear"
+            android:layout_height="@dimen/dp_48"
+            android:layout_margin="@dimen/dp_16"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:text="Apply"
+            android:textColor="@color/textWhiteFF"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</layout>

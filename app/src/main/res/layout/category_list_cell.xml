@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="CategoryListModel"
+            type="com.si.directory_app.models.cat_list.CategoryDatum" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/dp_104"
+        android:layout_height="@dimen/dp_104"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@drawable/bg_text"
+        android:backgroundTint="@color/textWhiteFF"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="@dimen/dp_56"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_12"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_cloth" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/rubik_regular"
+                android:gravity="bottom|center"
+                android:hint="Cloth"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/sp_12" />
+
+        </GridLayout>
+
+
+    </LinearLayout>
+</layout>

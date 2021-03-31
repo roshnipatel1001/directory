@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.WalkOverActivity"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:fontFamily="@font/rubik_bold"
+            android:layout_marginTop="@dimen/dp_72"
+            android:text="Lorem Ipsum"
+            android:textColor="@color/textBlack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="@font/rubik"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_14"
+            android:text="Lorem ipsum dolor sit amet, consectetur\nadipiscing elit. Duis tristique quam at laoreet\ntincidunt."
+            android:textColor="@color/textGrey70"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_290"
+            android:layout_height="@dimen/dp_224"
+            android:layout_marginTop="@dimen/dp_59"
+            android:src="@drawable/search" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btStart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_16"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:text="Get Started"
+            android:textColor="@color/textWhiteFF"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:id="@+id/btAlready"
+            android:fontFamily="@font/rubik"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:text="I already have an account"
+            android:textColor="@color/textBlueE2"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</layout>

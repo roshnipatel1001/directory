@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout><data><variable
+    name="Time"
+    type="com.si.directory_app.models.profile.Time" /></data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_45">
+
+    <TextView
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="match_parent"
+        android:text="sunday"
+        android:textColor="@color/textBlue58"
+        android:textSize="@dimen/sp_14"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tvDay"
+        android:gravity="center"
+        android:background="@color/textGreyBE"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/bgF6"
+        android:text="11.00 am to 8.00 pm"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tvTime"/>
+
+
+
+</LinearLayout>
+</layout>

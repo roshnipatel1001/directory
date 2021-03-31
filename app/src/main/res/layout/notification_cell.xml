@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout><data><variable
+    name="NotificationModel"
+    type="com.si.directory_app.models.notification.NotificationModel" /></data>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp_16"
+    android:background="@color/textWhiteFF"
+    android:id="@+id/view"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp_16"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/dp_8"
+            android:id="@+id/ivRead"
+            android:src="@drawable/ic_dot"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_alignParentStart="true"
+            android:tint="@color/colorPrimary"
+            android:layout_height="@dimen/dp_8"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/ivRead"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/dp_16">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                android:textColor="@color/textBlue58"
+                android:textSize="@dimen/dp_16"
+                android:fontFamily="@font/rubik_medium"
+                android:hint="Titile here"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDescription"
+                android:textColor="@color/textBlue58"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textSize="@dimen/dp_14"
+                android:fontFamily="@font/rubik_regular"
+                android:hint="Titile here"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</layout>

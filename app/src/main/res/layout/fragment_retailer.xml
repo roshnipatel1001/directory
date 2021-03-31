@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.RetailerFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="@dimen/dp_34"
+            android:layout_height="@dimen/dp_34"
+            android:src="@drawable/ic_back"
+            android:padding="@dimen/dp_5"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dp_16"
+            android:id="@+id/btBack"/>
+
+
+        <ImageView
+            android:layout_width="@dimen/dp_34"
+            android:layout_height="@dimen/dp_34"
+            android:padding="@dimen/dp_5"
+            android:layout_toStartOf="@id/ivFilter"
+            android:visibility="visible"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_search2"
+            android:id="@+id/search"/>
+
+
+        <ImageView
+            android:layout_width="@dimen/dp_34"
+            android:layout_height="@dimen/dp_34"
+            android:padding="@dimen/dp_5"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_filter"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:id="@+id/ivFilter"/>
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:fontFamily="@font/rubik_regular"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/textGray99"
+        android:layout_margin="@dimen/dp_16"
+        android:hint="Men's Clothing"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/retailerRecycler"/>
+
+</LinearLayout>
+
+</layout>

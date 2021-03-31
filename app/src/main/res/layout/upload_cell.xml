@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    android:background="@android:color/transparent"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:padding="@dimen/dp_8"
+        android:id="@+id/llGallery">
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:src="@drawable/ic_gallery"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gallery"
+            android:fontFamily="@font/rubik_regular"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="@dimen/dp_38"
+        android:background="@color/textGreyBE"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/dp_8"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/llCam">
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:src="@drawable/ic_take_a_photo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take a photo"
+            android:fontFamily="@font/rubik_regular"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="@dimen/dp_38"
+        android:background="@color/textGreyBE"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/dp_8"
+        android:visibility="visible"
+        android:id="@+id/llRemove">
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:tint="@color/textGrey70"
+            android:src="@drawable/ic_delete"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove photo"
+            android:fontFamily="@font/rubik_regular"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</layout>

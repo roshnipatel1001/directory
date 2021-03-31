@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black00</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorError">@color/error27</item>
+        <item name="colorOnSurface">@color/border70</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+
+
+    </style>
+
+    <style name="AppThemeSecondary" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorError">@color/error27</item>
+        <item name="colorOnSurface">@color/border70</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/bgGreen</item>
+        <item name="colorControlActivated">@color/bgGreen</item>
+    </style>
+
+</resources>

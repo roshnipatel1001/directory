@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ShortlistedActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_34"
+            android:layout_height="@dimen/dp_34"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_5"
+            android:layout_marginStart="@dimen/dp_14"
+            android:id="@+id/ivBack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Shortlist"
+            android:textColor="@color/textWhiteFF"
+            android:textSize="@dimen/sp_20"
+            android:fontFamily="@font/rubik_medium"
+            android:layout_marginStart="@dimen/dp_16"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabIndicatorHeight="@dimen/dp_4"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:text="Category"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:text="Retailer"/>
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_height="match_parent"
+        android:id="@+id/ViewPager"/>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:background="@color/bgF6"-->
+<!--        android:layout_height="@dimen/dp_56">-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:id="@+id/Sub"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Sub ProfileProductModel"-->
+<!--                    android:id="@+id/tvSub"-->
+<!--                    android:textSize="@dimen/sp_16"-->
+<!--                    android:textColor="@color/textBlack"-->
+<!--                    android:fontFamily="@font/rubik_regular"-->
+<!--                    android:layout_centerInParent="true"/>-->
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="4dp"-->
+<!--                    android:id="@+id/viewSub"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:background="@color/colorPrimary"/>-->
+
+<!--            </RelativeLayout>-->
+
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:id="@+id/Retailer"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Retailer"-->
+<!--                    android:id="@+id/tvRetailer"-->
+<!--                    android:textSize="@dimen/sp_16"-->
+<!--                    android:textColor="@color/textBlack"-->
+<!--                    android:fontFamily="@font/rubik_regular"-->
+<!--                    android:layout_centerInParent="true"/>-->
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="4dp"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:background="@color/colorPrimary"-->
+<!--                    android:id="@+id/viewRetailer"-->
+<!--                    android:visibility="gone"/>-->
+
+<!--            </RelativeLayout>-->
+
+<!--        </LinearLayout>-->
+
+
+<!--    </RelativeLayout>-->
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameContainer2" />
+
+
+</LinearLayout>
+
+</layout>

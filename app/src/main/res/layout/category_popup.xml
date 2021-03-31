@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="@dimen/dp_280"
+    android:layout_height="@dimen/dp_292">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dp_56"
+            android:layout_height="@dimen/dp_64"
+            android:id="@+id/iv1"
+            android:layout_marginTop="@dimen/dp_40"
+            android:src="@drawable/ic_success"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Successfully Subscribed"
+            android:gravity="center"
+            android:fontFamily="@font/rubik_regular"
+            android:id="@+id/tvConfirm"
+            android:textSize="@dimen/sp_18"
+            android:layout_marginTop="@dimen/dp_25"
+            android:textColor="@color/textBlack"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You are successfully subscribed this\nsub category.You have receive all update about this sub category."
+            android:fontFamily="@font/rubik_regular"
+            android:textSize="@dimen/sp_14"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="@dimen/dp_16"
+            android:textColor="@color/textGrey70"/>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="@dimen/dp_112"
+            android:layout_height="@dimen/dp_36"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:id="@+id/btOk"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:text="ok"
+            android:layout_marginTop="@dimen/dp_20"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:textColor="@color/textWhiteFF"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
